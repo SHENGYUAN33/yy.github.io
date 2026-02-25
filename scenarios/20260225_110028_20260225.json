@@ -1,0 +1,141 @@
+{
+  "name": "20260225",
+  "saved_at": "2026-02-25T11:00:28.642051",
+  "state": {
+    "markers": [
+      {
+        "location": [
+          23.093695,
+          121.567613
+        ],
+        "popup": "<b>國軍: Tuo Chiang-1</b>",
+        "color": "blue",
+        "icon": "ship",
+        "shape": "circle",
+        "layer": "wta"
+      },
+      {
+        "location": [
+          23.280819,
+          119.038618
+        ],
+        "popup": "<b>解放軍: 052D-1</b>",
+        "color": "red",
+        "icon": "ship",
+        "shape": "diamond",
+        "layer": "wta"
+      },
+      {
+        "location": [
+          22.822306,
+          121.443169
+        ],
+        "popup": "<b>國軍: Tuo Chiang-2</b>",
+        "color": "blue",
+        "icon": "ship",
+        "shape": "circle",
+        "layer": "wta"
+      },
+      {
+        "location": [
+          23.046975,
+          118.946128
+        ],
+        "popup": "<b>解放軍: 052D-2</b>",
+        "color": "red",
+        "icon": "ship",
+        "shape": "diamond",
+        "layer": "wta"
+      }
+    ],
+    "lines": [
+      {
+        "start": [
+          23.093695,
+          121.567613
+        ],
+        "end": [
+          23.280819,
+          119.038618
+        ],
+        "color": "#FF0000",
+        "popup": "第1波<br>雄三飛彈 x 4枚<br>14:56",
+        "weight": 4,
+        "dash_array": null,
+        "layer": "wta"
+      },
+      {
+        "start": [
+          22.822306,
+          121.443169
+        ],
+        "end": [
+          23.046975,
+          118.946128
+        ],
+        "color": "#FF0000",
+        "popup": "第2波<br>雄三飛彈 x 4枚<br>14:58",
+        "weight": 4,
+        "dash_array": null,
+        "layer": "wta"
+      }
+    ],
+    "tracks": [],
+    "wta_animation_data": {
+      "wta_results": [
+        {
+          "attack_wave": "第1波",
+          "weapon": "雄三飛彈",
+          "launched_time": "14:56",
+          "roc_location": [
+            23.093695,
+            121.567613
+          ],
+          "enemy_location": [
+            23.280819,
+            119.038618
+          ]
+        },
+        {
+          "attack_wave": "第2波",
+          "weapon": "雄三飛彈",
+          "launched_time": "14:58",
+          "roc_location": [
+            22.822306,
+            121.443169
+          ],
+          "enemy_location": [
+            23.046975,
+            118.946128
+          ]
+        }
+      ],
+      "weapon_colors": {
+        "雄三飛彈": "#FF0000",
+        "雄風三型": "#FF0000",
+        "雄三": "#FF0000",
+        "標準二型飛彈": "#0066FF",
+        "標準二型": "#0066FF",
+        "標準": "#0066FF",
+        "雄二飛彈": "#FF6600",
+        "雄風二型": "#FF6600",
+        "雄二": "#FF6600",
+        "天劍飛彈": "#9900CC",
+        "天劍": "#9900CC",
+        "魚叉飛彈": "#00CC66",
+        "魚叉": "#00CC66",
+        "標準三型": "#FF00FF",
+        "愛國者": "#FFFF00",
+        "海麻雀": "#00FFFF",
+        "SM-2": "#0066FF",
+        "SM-3": "#FF00FF",
+        "Patriot": "#FFFF00",
+        "Sea Sparrow": "#00FFFF",
+        "Harpoon": "#00CC66"
+      }
+    },
+    "layers": [
+      "wta"
+    ]
+  }
+}

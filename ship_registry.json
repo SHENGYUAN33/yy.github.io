@@ -1,0 +1,44 @@
+{
+  "_comment": "船艦註冊表 - 單一資料來源 (Single Source of Truth)",
+  "_usage": "新增/修改船艦只需編輯此檔案，系統啟動時自動生成關鍵字列表和 LLM 陣營判斷指南",
+  "roc": {
+    "faction_terms": ["國軍", "我方", "我軍", "ROC", "友軍", "中華民國"],
+    "additional_keywords": ["PGG", "批居居", "成功級"],
+    "ships": [
+      { "hull_number": "1101", "name": "Cheng Kung", "chinese_name": "成功艦", "ship_class": "成功級巡防艦", "weapons": ["雄風二型", "標準一型", "76mm艦砲"] },
+      { "hull_number": "1306", "name": "Yung Feng", "chinese_name": null, "ship_class": "濟陽級巡防艦", "weapons": ["標準一型", "ASROC"] },
+      { "hull_number": "1306", "name": "Yung Yang", "chinese_name": null, "ship_class": "濟陽級巡防艦", "weapons": ["標準一型", "ASROC"] },
+      { "hull_number": "1310", "name": "Yung Jin", "chinese_name": null, "ship_class": "濟陽級巡防艦", "weapons": ["標準一型", "ASROC"] },
+      { "hull_number": "1401", "name": "Yu Shan", "chinese_name": null, "ship_class": "玉山級船塢運輸艦", "weapons": ["76mm艦砲", "方陣快砲"] },
+      { "hull_number": "1801", "name": "Keelung", "chinese_name": "基隆艦", "ship_class": "基隆級驅逐艦", "weapons": ["標準二型", "魚叉飛彈", "方陣快砲"] },
+      { "hull_number": "193", "name": "Shui Hai", "chinese_name": null, "ship_class": "海獅級潛艦", "weapons": ["魚雷"] },
+      { "hull_number": "232", "name": "Chung Ho", "chinese_name": null, "ship_class": "劍龍級潛艦", "weapons": ["魚叉飛彈", "魚雷"] },
+      { "hull_number": "524", "name": "Yuen Feng", "chinese_name": null, "ship_class": "錦江級巡邏艦", "weapons": ["雄風二型", "40mm艦砲"] },
+      { "hull_number": "330", "name": "Wu Yi", "chinese_name": null, "ship_class": "武夷級油彈補給艦", "weapons": ["方陣快砲"] },
+      { "hull_number": "601", "name": "Lung Chiang", "chinese_name": null, "ship_class": "龍江級飛彈快艇", "weapons": ["雄風二型"] },
+      { "hull_number": "603", "name": "Jing Chiang", "chinese_name": null, "ship_class": "錦江級巡邏艦", "weapons": ["雄風二型", "40mm艦砲"] },
+      { "hull_number": "605", "name": "Dang Chiang", "chinese_name": null, "ship_class": "錦江級巡邏艦", "weapons": ["雄風二型", "40mm艦砲"] },
+      { "hull_number": "912", "name": "Chien Yang", "chinese_name": null, "ship_class": "濟陽級巡防艦", "weapons": ["標準一型", "ASROC"] },
+      { "hull_number": "915", "name": "Han Yang", "chinese_name": null, "ship_class": "濟陽級巡防艦", "weapons": ["標準一型", "ASROC"] },
+      { "hull_number": "932", "name": "Chi Yang", "chinese_name": null, "ship_class": "濟陽級巡防艦", "weapons": ["標準一型", "ASROC"] },
+      { "hull_number": "AOE 532", "name": "Panshih", "chinese_name": null, "ship_class": "磐石級油彈補給艦", "weapons": ["方陣快砲", "76mm艦砲"] },
+      { "hull_number": "CG 601", "name": "Anping", "chinese_name": null, "ship_class": "安平級巡防艦", "weapons": ["雄風二型", "鎮海火箭"] },
+      { "hull_number": "FABG 5", "name": "Hai Ou", "chinese_name": null, "ship_class": "海鷗級飛彈快艇", "weapons": ["雄風一型"] },
+      { "hull_number": "FACG 61", "name": "Kuang Hua VI", "chinese_name": null, "ship_class": "光華六號飛彈快艇", "weapons": ["雄風二型"] },
+      { "hull_number": "PFG 1202", "name": "Kang Ding", "chinese_name": null, "ship_class": "康定級巡防艦", "weapons": ["雄風二型", "海叢樹飛彈", "40mm艦砲"] },
+      { "hull_number": "PGG 618", "name": "Tuo Chiang", "chinese_name": "沱江艦", "ship_class": "沱江級巡邏艦", "weapons": ["雄風二型", "雄風三型", "海劍二"] },
+      { "hull_number": "PGG 619", "name": "Ta Chiang", "chinese_name": "塔江艦", "ship_class": "沱江級巡邏艦", "weapons": ["雄風二型", "雄風三型", "海劍二"] },
+      { "hull_number": null, "name": "Pinguin A1", "chinese_name": null, "ship_class": "無人水面載具", "weapons": [] }
+    ]
+  },
+  "enemy": {
+    "faction_terms": ["解放軍", "敵軍", "中國", "共軍", "敵方"],
+    "additional_keywords": ["驅逐艦(未指定)", "護衛艦(未指定)"],
+    "ships": [
+      { "name": "052D", "aliases": ["大型驅逐艦"] },
+      { "name": "054A", "aliases": ["護衛艦"] },
+      { "name": "055", "aliases": [] },
+      { "name": "056", "aliases": [] }
+    ]
+  }
+}

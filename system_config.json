@@ -1,0 +1,148 @@
+{
+  "api_settings": {
+    "api_mode": "real",
+    "real_api": {
+      "base_url": "https://2238e735-b9e0-45df-a24e-07d987a4ee9a.mock.pstmn.io",
+      "timeout": 300,
+      "endpoints": {
+        "import_scenario": "/import_scenario",
+        "star_scenario": "/start_scenario",
+        "get_wta": "/get_wta",
+        "get_answer": "/get_answer",
+        "get_track": "/get_track"
+      }
+    },
+    "local_api": {
+      "base_url": "http://localhost:3000/api/v1",
+      "timeout": 300,
+      "endpoints": {
+        "import_scenario": "/import_scenario",
+        "star_scenario": "/star_scenario",
+        "get_wta": "/get_wta",
+        "get_answer": "/get_answer",
+        "get_track": "/get_track"
+      }
+    },
+    "local_data": {
+      "db_file": "db_v2.json",
+      "track_file": "track_data.json",
+      "mock_responses_dir": "mock_responses"
+    }
+  },
+  "llm_settings": {
+    "active_provider": "ollama",
+    "providers": {
+      "ollama": {
+        "name": "Ollama",
+        "base_url": "http://localhost:11434",
+        "chat_endpoint": "/api/chat",
+        "timeout": 300,
+        "default_model": "llama3.2:3b",
+        "models": [
+          {
+            "id": "llama3.2:3b",
+            "name": "Llama 3.2 3B",
+            "size": "2.0 GB",
+            "speed": "快速",
+            "quality": "良好"
+          },
+          {
+            "id": "mistral:7b",
+            "name": "Mistral 7B",
+            "size": "4.1 GB",
+            "speed": "中等",
+            "quality": "優秀"
+          },
+          {
+            "id": "llama3:8b",
+            "name": "Llama 3 8B（不支援tools，自動降級）",
+            "size": "4.7 GB",
+            "speed": "中等",
+            "quality": "優秀",
+            "supports_tools": false
+          },
+          {
+            "id": "llama3.1:8b",
+            "name": "Llama 3.1 8B（支援tools）",
+            "size": "4.7 GB",
+            "speed": "中等",
+            "quality": "優秀",
+            "supports_tools": true
+          },
+          {
+            "id": "qwen2.5:7b",
+            "name": "Qwen 2.5 7B（支援tools，中文強）",
+            "size": "4.7 GB",
+            "speed": "中等",
+            "quality": "優秀",
+            "supports_tools": true
+          },
+          {
+            "id": "llama3.1:70b",
+            "name": "Llama 3.1 70B",
+            "size": "40 GB",
+            "speed": "較慢",
+            "quality": "極佳",
+            "supports_tools": true
+          }
+        ]
+      },
+      "openai": {
+        "name": "OpenAI",
+        "base_url": "https://api.openai.com",
+        "chat_endpoint": "/v1/chat/completions",
+        "timeout": 120,
+        "api_key_env": "OPENAI_API_KEY",
+        "default_model": "gpt-4",
+        "models": [
+          {
+            "id": "gpt-4",
+            "name": "GPT-4",
+            "speed": "中等",
+            "quality": "極佳"
+          },
+          {
+            "id": "gpt-4o",
+            "name": "GPT-4o",
+            "speed": "快速",
+            "quality": "極佳"
+          },
+          {
+            "id": "gpt-3.5-turbo",
+            "name": "GPT-3.5 Turbo",
+            "speed": "快速",
+            "quality": "良好"
+          }
+        ]
+      },
+      "anthropic": {
+        "name": "Anthropic",
+        "base_url": "https://api.anthropic.com",
+        "chat_endpoint": "/v1/messages",
+        "timeout": 120,
+        "api_key_env": "ANTHROPIC_API_KEY",
+        "default_model": "claude-sonnet-4-5-20250929",
+        "models": [
+          {
+            "id": "claude-sonnet-4-5-20250929",
+            "name": "Claude Sonnet 4.5",
+            "speed": "快速",
+            "quality": "極佳"
+          },
+          {
+            "id": "claude-haiku-4-5-20251001",
+            "name": "Claude Haiku 4.5",
+            "speed": "極快",
+            "quality": "良好"
+          }
+        ]
+      }
+    }
+  },
+  "rag_settings": {
+    "default_mode": "military_qa",
+    "default_model": "TAIDE8B",
+    "stream": 0,
+    "max_sources": 5
+  }
+}
